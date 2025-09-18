@@ -1,9 +1,10 @@
+import LangProvider from "@/providers/LangProvider";
 import Dashboard from "./components/Dashboard";
 
 const page = () => {
     return (
         <div>
-            <Dashboard/>
+            <LangProvider><Dashboard /></LangProvider>
         </div>
     );
 };

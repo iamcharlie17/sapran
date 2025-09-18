@@ -1,9 +1,10 @@
-import React from 'react';
+import Header from "@/components/Header/Header";
 
 const Dashboard = () => {
     return (
         <div>
-            This is Dashboard Component
+            {/* Header */}
+            <Header/>
         </div>
     );
 };
