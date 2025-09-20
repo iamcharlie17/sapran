@@ -2,8 +2,8 @@
 
 import { CiSearch } from "react-icons/ci";
 import sapranLogo from "../../assets/logos/Sapran.svg"
-import Button from "../Buttons/Button";
 import { useLang } from "@/providers/LangProvider";
+import Button from "../Buttons/Button";
 const Header = () => {
     const { lang, setLang } = useLang();
 
@@ -35,7 +35,11 @@ const Header = () => {
                         <h1 onClick={() => handleLangChange("EN")} className={`${lang == 'EN' ? 'text-secondary' : ''} cursor-pointer`}>ENGLISH</h1>
                         <h2 onClick={() => handleLangChange("BN")} className={`${lang == 'BN' ? 'text-secondary' : ''} cursor-pointer`}>বাংলা</h2>
                     </div>
-                    <Button type="secondary" size="normal">{lang === 'BN' ? 'দান করুন' : 'DONATE NOW'}</Button>
+                    <button className={`bg-secondary text-white font-bold py-1 px-4 rounded-md
+        text-lg`}>
+                        {lang === 'BN' ? 'দান করুন' : 'DONATE NOW'}
+                    </button>
+                    {/* <Button type="secondary" size="normal">{lang === 'BN' ? 'দান করুন' : 'DONATE NOW'}</Button> */}
                 </div>
             </div>
         </header>

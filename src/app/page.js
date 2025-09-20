@@ -8,8 +8,6 @@ export default function Home() {
       <Link href="/dashboard">
         <button>Dashboard</button>
       </Link>
-
-      <TypingHero/>
     </div>
   );
 }
