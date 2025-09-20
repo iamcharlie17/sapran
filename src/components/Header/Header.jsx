@@ -13,7 +13,7 @@ const Header = () => {
     }
 
     return (
-        <header className="flex justify-between items-center py-8 px-32 broder-b border border-primary">
+        <header className="flex justify-between items-center py-8 px-16 mx-16 border-b border-primary">
             <div className="flex-1 text-primary space-y-2">
                 <div>
                     <h1 className="font-bold">{lang === 'BN' ? 'সকল মানুষের নিরাপত্তা - সপ্রান' : 'SAFEGUARDING ALL LIVES - SAPRAN'}</h1>

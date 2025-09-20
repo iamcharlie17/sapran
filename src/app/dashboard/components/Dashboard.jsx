@@ -1,12 +1,16 @@
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
+import Hero from "./hero/Hero";
+
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className="max-w-[2000px] mx-auto">
             {/* Header */}
-            <Header/>
-            <Navbar/>
+            <Header />
+            <Navbar />
+            <Hero />
+
         </div>
     );
 };
